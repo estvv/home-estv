@@ -1,0 +1,22 @@
+{
+  "site": {
+    "title": "ESTV Cloud Platform",
+    "subtitle": "Self-Hosted Services Portal"
+  },
+  "services": [
+    {
+      "id": "openwebui",
+      "name": "Open WebUI",
+      "description": "AI-powered chat interface with LLM integration",
+      "url": "https://openwebui.estv.fr",
+      "icon": "brain"
+    },
+    {
+      "id": "system",
+      "name": "System Monitor",
+      "description": "Real-time server metrics and performance monitoring",
+      "url": "https://system.estv.fr",
+      "icon": "monitor"
+    }
+  ]
+}
