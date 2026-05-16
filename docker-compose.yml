@@ -1,7 +1,7 @@
 services:
   web:
     image: nginx:alpine
-    container_name: home-portal
+    container_name: home-estv
     restart: unless-stopped
     ports:
       - "127.0.0.1:3002:80"
