@@ -118,31 +118,15 @@
             }
         }
 
-        function checkServiceStatus(service) {
-            const timestamp = Date.now();
-            const checkUrl = service.checkUrl || `${service.url}/favicon.ico`;
-            const imgUrl = `${checkUrl}?t=${timestamp}`;
+        async function checkServiceStatus(service) {
+            const url = service.checkUrl || service.url;
 
-            return new Promise((resolve) => {
-                const img = new Image();
-                const timeout = setTimeout(() => {
-                    img.onload = null;
-                    img.onerror = null;
-                    resolve('offline');
-                }, 5000);
-
-                img.onload = () => {
-                    clearTimeout(timeout);
-                    resolve('online');
-                };
-
-                img.onerror = () => {
-                    clearTimeout(timeout);
-                    resolve('offline');
-                };
-
-                img.src = imgUrl;
-            });
+            try {
+                const response = await fetch(url, { mode: 'no-cors' });
+                return 'online';
+            } catch (error) {
+                return 'offline';
+            }
         }
 
         async function checkAllServices() {

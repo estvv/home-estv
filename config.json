@@ -9,6 +9,7 @@
       "name": "Open WebUI",
       "description": "AI-powered chat interface with LLM integration",
       "url": "https://openwebui.estv.fr",
+      "checkUrl": "https://openwebui.estv.fr/health",
       "icon": "brain"
     },
     {
@@ -16,6 +17,7 @@
       "name": "System Monitor",
       "description": "Real-time server metrics and performance monitoring",
       "url": "https://system.estv.fr",
+      "checkUrl": "https://system.estv.fr/health",
       "icon": "monitor"
     }
   ]
