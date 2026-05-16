@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESTV Cloud Platform</title>
+    <title>Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -38,8 +38,8 @@
 </head>
 <body class="bg-white text-neutral-500 antialiased min-h-screen">
     <div class="max-w-2xl mx-auto px-6 py-16">
-        <header class="mb-16">
-            <h1 id="siteTitle" class="text-2xl font-medium text-black mb-1">Loading...</h1>
+        <header class="mb-16 text-center">
+            <h1 id="siteTitle" class="text-2xl font-bold text-black mb-1">Loading...</h1>
             <p id="siteSubtitle" class="text-neutral-400 text-sm"></p>
         </header>
 
@@ -59,7 +59,7 @@
             row.href = service.url;
             row.target = '_blank';
             row.rel = 'noopener noreferrer';
-            row.className = 'flex items-center justify-between py-3 px-4 -mx-4 rounded-lg hover:bg-neutral-50 transition-colors duration-150';
+            row.className = 'flex items-center justify-between py-3 px-4 rounded-lg border border-neutral-200 hover:bg-neutral-50 transition-colors duration-150';
             row.setAttribute('data-service-id', service.id);
 
             row.innerHTML = `
