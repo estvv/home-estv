@@ -39,20 +39,32 @@
 <body class="bg-white text-neutral-500 antialiased min-h-screen">
     <div class="max-w-2xl mx-auto px-6 py-16">
         <header class="mb-16 text-center">
-            <h1 id="siteTitle" class="text-2xl font-bold text-black mb-1">Loading...</h1>
+            <h1 class="text-2xl font-bold text-black mb-1">Home</h1>
+            <p class="text-xs text-neutral-400 mt-1 font-mono">{{GIT_HASH}}</p>
             <p id="siteSubtitle" class="text-neutral-400 text-sm"></p>
         </header>
 
         <div id="servicesList" class="space-y-3">
         </div>
 
-        <footer class="mt-16 text-neutral-400 text-xs">
+        <footer class="mt-16 text-neutral-400 text-xs text-center">
             <p>Last updated: <span id="lastUpdate">--</span></p>
+            <p class="mt-1">Version: <span id="gitHash">--</span></p>
         </footer>
     </div>
 
     <script>
         let config = null;
+
+        async function loadVersion() {
+            try {
+                const response = await fetch('version.json');
+                const data = await response.json();
+                document.getElementById('gitHash').textContent = data.gitHash || 'unknown';
+            } catch (error) {
+                document.getElementById('gitHash').textContent = 'unknown';
+            }
+        }
 
         function createServiceRow(service) {
             const row = document.createElement('a');
@@ -157,7 +169,6 @@
                 const response = await fetch('config.json');
                 config = await response.json();
 
-                document.getElementById('siteTitle').textContent = config.site.title;
                 document.getElementById('siteSubtitle').textContent = config.site.subtitle;
 
                 const list = document.getElementById('servicesList');
@@ -170,12 +181,12 @@
 
                 checkAllServices();
             } catch (error) {
-                document.getElementById('siteTitle').textContent = 'Error Loading Config';
                 console.error('Failed to load config:', error);
             }
         }
 
         loadConfig();
+        loadVersion();
 
         setInterval(checkAllServices, 5000);
     </script>
