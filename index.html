@@ -147,6 +147,44 @@
             document.getElementById('lastUpdate').textContent = now.toLocaleTimeString();
         }
 
+        function createCategoryHeader(categoryName) {
+            const header = document.createElement('div');
+            header.className = 'text-neutral-400 text-xs font-medium uppercase tracking-wider mb-2 mt-6 first:mt-0';
+            header.textContent = categoryName;
+            return header;
+        }
+
+        function groupServicesByCategory(services, categories) {
+            const groups = new Map();
+            const categorized = new Set();
+
+            if (categories) {
+                categories.forEach(cat => {
+                    groups.set(cat.id, {
+                        name: cat.name,
+                        services: []
+                    });
+                });
+            }
+
+            services.forEach(service => {
+                if (service.category && groups.has(service.category)) {
+                    groups.get(service.category).services.push(service);
+                    categorized.add(service.id);
+                }
+            });
+
+            const uncategorized = services.filter(s => !s.category || !groups.has(s.category));
+            if (uncategorized.length > 0) {
+                groups.set('uncategorized', {
+                    name: '',
+                    services: uncategorized
+                });
+            }
+
+            return groups;
+        }
+
         async function loadConfig() {
             try {
                 const response = await fetch('config.json');
@@ -157,9 +195,25 @@
                 const list = document.getElementById('servicesList');
                 list.innerHTML = '';
 
-                config.services.forEach(service => {
-                    const row = createServiceRow(service);
-                    list.appendChild(row);
+                const groups = groupServicesByCategory(config.services, config.categories);
+
+                if (groups.has('uncategorized')) {
+                    const uncategorized = groups.get('uncategorized');
+                    uncategorized.services.forEach(service => {
+                        const row = createServiceRow(service);
+                        list.appendChild(row);
+                    });
+                    groups.delete('uncategorized');
+                }
+
+                groups.forEach((group, categoryId) => {
+                    const header = createCategoryHeader(group.name);
+                    list.appendChild(header);
+
+                    group.services.forEach(service => {
+                        const row = createServiceRow(service);
+                        list.appendChild(row);
+                    });
                 });
 
                 checkAllServices();
