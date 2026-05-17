@@ -18,19 +18,19 @@
       "category": "core"
     },
     {
-      "id": "openwebui",
-      "name": "Open WebUI",
-      "description": "AI-powered chat interface with LLM integration",
-      "url": "https://openwebui.estv.fr",
-      "checkUrl": "https://openwebui.estv.fr/health",
-      "category": "tools"
-    },
-    {
       "id": "system",
       "name": "System",
       "description": "Real-time server metrics and performance monitoring",
       "url": "https://system.estv.fr",
       "checkUrl": "https://system.estv.fr/health",
+      "category": "core"
+    },
+    {
+      "id": "analytics",
+      "name": "Analytics",
+      "description": "Analytics dashboard for tracking website traffic and user behavior",
+      "url": "https://analytics.estv.fr",
+      "checkUrl": "https://analytics.estv.fr/",
       "category": "core"
     },
     {
@@ -40,6 +40,14 @@
       "url": "https://materials-simulator.estv.fr/",
       "checkUrl": "https://materials-simulator.estv.fr/",
       "category": "projects"
+    },
+    {
+      "id": "openwebui",
+      "name": "Open WebUI",
+      "description": "AI-powered chat interface with LLM integration",
+      "url": "https://openwebui.estv.fr",
+      "checkUrl": "https://openwebui.estv.fr/health",
+      "category": "tools"
     }
   ]
 }
