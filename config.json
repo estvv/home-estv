@@ -42,6 +42,14 @@
       "category": "projects"
     },
     {
+      "id": "shareo",
+      "name": "Shareo",
+      "description": "A link sharing platform",
+      "url": "https://shareo.fr/",
+      "checkUrl": "https://shareo.fr/",
+      "category": "projects"
+    },
+    {
       "id": "openwebui",
       "name": "Open WebUI",
       "description": "AI-powered chat interface with LLM integration",
