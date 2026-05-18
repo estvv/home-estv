@@ -37,7 +37,7 @@
       "id": "materials-simulator",
       "name": "Materials Simulator",
       "description": "A simulator of materials",
-      "url": "https://materials-simulator.estv.fr/",
+      "url": "https://materials-simulator.estv.fr",
       "checkUrl": "https://materials-simulator.estv.fr/",
       "category": "projects"
     },
@@ -45,7 +45,7 @@
       "id": "shareo",
       "name": "Shareo",
       "description": "A link sharing platform",
-      "url": "https://shareo.fr/",
+      "url": "https://shareo.fr",
       "checkUrl": "https://shareo.fr/",
       "category": "projects"
     },
