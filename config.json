@@ -12,7 +12,7 @@
   "services": [
     {
       "id": "about",
-      "name": "About Me",
+      "name": "About me",
       "description": "Personal information and biography",
       "url": "https://about.estv.fr/",
       "checkUrl": "https://about.estv.fr/health",

@@ -67,6 +67,7 @@
                 <div class="flex-1 min-w-0">
                     <div class="text-black text-sm font-medium">${service.name}</div>
                     <div class="text-neutral-400 text-xs mt-0.5">${service.url.replace('https://', '')}</div>
+                    ${service.description ? `<div class="text-neutral-500 text-xs mt-1">${service.description}</div>` : ''}
                 </div>
                 <div class="status-indicator ml-4" data-service="${service.id}">
                     <span class="checking flex items-center gap-2 text-neutral-400 text-xs">
