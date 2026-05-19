@@ -4,11 +4,28 @@
     "subtitle": "Self-Hosted Services Portal"
   },
   "categories": [
+    { "id": "me", "name": "Me" },
     { "id": "core", "name": "Core" },
     { "id": "projects", "name": "Projects" },
     { "id": "tools", "name": "Tools" }
   ],
   "services": [
+    {
+      "id": "about",
+      "name": "About Me",
+      "description": "Personal information and biography",
+      "url": "https://about.estv.fr/",
+      "checkUrl": "https://about.estv.fr/health",
+      "category": "me"
+    },
+    {
+      "id": "althea",
+      "name": "Althea",
+      "description": "My freelance web development agency",
+      "url": "https://althea.estv.fr/",
+      "checkUrl": "https://althea.estv.fr/",
+      "category": "me"
+    },
     {
       "id": "home",
       "name": "Home",
@@ -31,6 +48,14 @@
       "description": "Analytics dashboard for tracking website traffic and user behavior",
       "url": "https://analytics.estv.fr",
       "checkUrl": "https://analytics.estv.fr/",
+      "category": "core"
+    },
+    {
+      "id": "dashboard",
+      "name": "Dashboard",
+      "description": "",
+      "url": "https://dashboard.estv.fr",
+      "checkUrl": "https://dashboard.estv.fr/",
       "category": "core"
     },
     {
