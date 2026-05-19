@@ -56,6 +56,14 @@
       "url": "https://openwebui.estv.fr",
       "checkUrl": "https://openwebui.estv.fr/health",
       "category": "tools"
+    },
+    {
+      "id": "todo",
+      "name": "Todo",
+      "description": "A simple todo application",
+      "url": "https://todo.estv.fr",
+      "checkUrl": "https://todo.estv.fr/health",
+      "category": "tools"
     }
   ]
 }
