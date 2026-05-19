@@ -11,8 +11,7 @@ class StatusService {
   }
 
   async loadServices() {
-    const absolutePath = path.resolve(__dirname, this.configPath);
-    const raw = fs.readFileSync(absolutePath, 'utf8');
+    const raw = fs.readFileSync(this.configPath, 'utf8');
     const config = JSON.parse(raw);
     return config.services || [];
   }

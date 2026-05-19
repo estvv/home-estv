@@ -7,6 +7,6 @@ module.exports = {
     timeout: parseInt(process.env.CHECK_TIMEOUT, 10) || 5000
   },
   services: {
-    configPath: process.env.CONFIG_PATH || '../config.json'
+    configPath: process.env.CONFIG_PATH || '/app/config.json'
   }
 };
