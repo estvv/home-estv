@@ -40,7 +40,6 @@
     <div class="max-w-2xl mx-auto px-6 py-16">
         <header class="mb-16 text-center">
             <h1 class="text-2xl font-bold text-black mb-1">Home</h1>
-            <p class="text-xs text-neutral-400 mt-1 font-mono"><span id="gitHash">--</span></p>
             <p id="siteSubtitle" class="text-neutral-400 text-sm"></p>
         </header>
 
@@ -55,16 +54,6 @@
     <script defer src="https://analytics.estv.fr/script.js" data-website-id="1d26323a-3226-4ef2-80a1-e326be7e38a1"></script>
     <script>
         let config = null;
-
-        async function loadVersion() {
-            try {
-                const response = await fetch('version.json');
-                const data = await response.json();
-                document.getElementById('gitHash').textContent = data.gitHash || 'unknown';
-            } catch (error) {
-                document.getElementById('gitHash').textContent = 'unknown';
-            }
-        }
 
         function createServiceRow(service) {
             const row = document.createElement('a');
@@ -119,33 +108,23 @@
             }
         }
 
-        async function checkServiceStatus(service) {
-            const url = service.checkUrl || service.url;
-
-            try {
-                const response = await fetch(url, { mode: 'no-cors' });
-                return 'online';
-            } catch (error) {
-                return 'offline';
-            }
-        }
-
         async function checkAllServices() {
-            if (!config || !config.services) return;
+            try {
+                const response = await fetch('/api/status');
+                const data = await response.json();
 
-            const results = await Promise.all(
-                config.services.map(async (service) => {
-                    const status = await checkServiceStatus(service);
-                    return { id: service.id, status };
-                })
-            );
+                data.services.forEach(service => {
+                    updateStatusUI(service.id, service.status);
+                });
 
-            results.forEach(({ id, status }) => {
-                updateStatusUI(id, status);
-            });
-
-            const now = new Date();
-            document.getElementById('lastUpdate').textContent = now.toLocaleTimeString();
+                const now = new Date(data.timestamp);
+                document.getElementById('lastUpdate').textContent = now.toLocaleTimeString();
+            } catch (error) {
+                console.error('Status check failed:', error);
+                if (config && config.services) {
+                    config.services.forEach(s => updateStatusUI(s.id, 'offline'));
+                }
+            }
         }
 
         function createCategoryHeader(categoryName) {
@@ -224,7 +203,6 @@
         }
 
         loadConfig();
-        loadVersion();
 
         setInterval(checkAllServices, 5000);
     </script>
