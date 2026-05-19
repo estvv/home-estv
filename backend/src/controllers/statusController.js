@@ -1,4 +1,4 @@
-const status = async (statusService) => {
+const status = (statusService) => {
   return async (req, res, next) => {
     try {
       const data = await statusService.checkAll();
