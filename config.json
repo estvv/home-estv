@@ -14,7 +14,7 @@
       "id": "about",
       "name": "About me",
       "description": "Personal information and biography",
-      "url": "https://about.estv.fr/",
+      "url": "https://about.estv.fr",
       "checkUrl": "https://about.estv.fr/health",
       "category": "me"
     },
@@ -22,8 +22,8 @@
       "id": "althea",
       "name": "Althea",
       "description": "My freelance web development agency",
-      "url": "https://althea.estv.fr/",
-      "checkUrl": "https://althea.estv.fr/",
+      "url": "https://althea.estv.fr",
+      "checkUrl": "https://althea.estv.fr",
       "category": "me"
     },
     {
@@ -31,7 +31,7 @@
       "name": "Home",
       "description": "Centralized dashboard to access all my self-hosted services",
       "url": "https://home.estv.fr",
-      "checkUrl": "https://home.estv.fr/",
+      "checkUrl": "https://home.estv.fr",
       "category": "core"
     },
     {
@@ -47,7 +47,7 @@
       "name": "Analytics",
       "description": "Analytics dashboard for tracking website traffic and user behavior",
       "url": "https://analytics.estv.fr",
-      "checkUrl": "https://analytics.estv.fr/",
+      "checkUrl": "https://analytics.estv.fr",
       "category": "core"
     },
     {
@@ -55,7 +55,7 @@
       "name": "Dashboard",
       "description": "",
       "url": "https://dashboard.estv.fr",
-      "checkUrl": "https://dashboard.estv.fr/",
+      "checkUrl": "https://dashboard.estv.fr",
       "category": "core"
     },
     {
@@ -63,7 +63,7 @@
       "name": "Materials Simulator",
       "description": "A simulator of materials",
       "url": "https://materials-simulator.estv.fr",
-      "checkUrl": "https://materials-simulator.estv.fr/",
+      "checkUrl": "https://materials-simulator.estv.fr",
       "category": "projects"
     },
     {
@@ -71,7 +71,7 @@
       "name": "Shareo",
       "description": "A link sharing platform",
       "url": "https://shareo.fr",
-      "checkUrl": "https://shareo.fr/",
+      "checkUrl": "https://shareo.fr",
       "category": "projects"
     },
     {
