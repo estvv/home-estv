@@ -89,6 +89,14 @@
       "url": "https://todo.estv.fr",
       "checkUrl": "https://todo.estv.fr/health",
       "category": "tools"
+    },
+    {
+      "id": "notes",
+      "name": "Notes",
+      "description": "A simple note-taking application",
+      "url": "https://notes.estv.fr",
+      "checkUrl": "https://notes.estv.fr/health",
+      "category": "tools"
     }
   ]
 }
