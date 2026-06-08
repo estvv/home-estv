@@ -97,6 +97,14 @@
       "url": "https://notes.estv.fr",
       "checkUrl": "https://notes.estv.fr/health",
       "category": "tools"
+    },
+    {
+      "id": "news",
+      "name": "News",
+      "description": "A simple dashboard to display papers from arXiv and huggingface",
+      "url": "https://news.estv.fr",
+      "checkUrl": "https://news.estv.fr/health",
+      "category": "tools"
     }
   ]
 }
