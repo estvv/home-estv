@@ -13,7 +13,7 @@
     {
       "id": "about",
       "name": "About me",
-      "description": "Personal information and biography",
+      "description": "A simple resume of my career and my skills",
       "url": "https://about.estv.fr",
       "checkUrl": "https://about.estv.fr/health",
       "category": "me"
@@ -37,7 +37,7 @@
     {
       "id": "system",
       "name": "System",
-      "description": "Real-time server metrics and performance monitoring",
+      "description": "Custom self-hosted server monitor",
       "url": "https://system.estv.fr",
       "checkUrl": "https://system.estv.fr/health",
       "category": "core"
@@ -69,7 +69,7 @@
     {
       "id": "shareo",
       "name": "Shareo",
-      "description": "A link sharing platform",
+      "description": "A simple and minimalist link sharing platform",
       "url": "https://shareo.fr",
       "checkUrl": "https://shareo.fr",
       "category": "projects"
@@ -77,7 +77,7 @@
     {
       "id": "openwebui",
       "name": "Open WebUI",
-      "description": "AI-powered chat interface with LLM integration",
+      "description": "Openwebui service self-hosted. With my prompts and my skills homemades",
       "url": "https://openwebui.estv.fr",
       "checkUrl": "https://openwebui.estv.fr/health",
       "category": "tools"
@@ -101,7 +101,7 @@
     {
       "id": "news",
       "name": "News",
-      "description": "A simple dashboard to display papers from arXiv and huggingface",
+      "description": "A simple application that list papers from arxiv.org.",
       "url": "https://news.estv.fr",
       "checkUrl": "https://news.estv.fr/health",
       "category": "tools"
