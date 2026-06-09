@@ -13,7 +13,7 @@
     {
       "id": "about",
       "name": "About me",
-      "description": "A simple resume of my career and my skills",
+      "description": "Personal portfolio and resume showcasing career and technical skills",
       "url": "https://about.estv.fr",
       "checkUrl": "https://about.estv.fr/health",
       "category": "me"
@@ -21,7 +21,7 @@
     {
       "id": "althea",
       "name": "Althea",
-      "description": "My freelance web development agency",
+      "description": "Freelance web development agency portfolio and services showcase",
       "url": "https://althea.estv.fr",
       "checkUrl": "https://althea.estv.fr",
       "category": "me"
@@ -29,7 +29,7 @@
     {
       "id": "home",
       "name": "Home",
-      "description": "Centralized dashboard to access all my self-hosted services",
+      "description": "Centralized dashboard portal for accessing all self-hosted services",
       "url": "https://home.estv.fr",
       "checkUrl": "https://home.estv.fr",
       "category": "core"
@@ -37,31 +37,31 @@
     {
       "id": "system",
       "name": "System",
-      "description": "Custom self-hosted server monitor",
+      "description": "Ultra-lightweight VPS monitoring dashboard with real-time metrics and charts",
       "url": "https://system.estv.fr",
       "checkUrl": "https://system.estv.fr/health",
       "category": "core"
     },
     {
-      "id": "analytics",
-      "name": "Analytics",
-      "description": "Analytics dashboard for tracking website traffic and user behavior",
-      "url": "https://analytics.estv.fr",
-      "checkUrl": "https://analytics.estv.fr",
-      "category": "core"
-    },
-    {
       "id": "status",
       "name": "Status",
-      "description": "Real-time Docker container monitor and service manager",
+      "description": "Real-time Docker container monitor and service health management dashboard",
       "url": "https://status.estv.fr",
       "checkUrl": "https://status.estv.fr/health",
       "category": "core"
     },
     {
+      "id": "analytics",
+      "name": "Analytics",
+      "description": "Privacy-focused website analytics powered by Umami tracking traffic and user behavior",
+      "url": "https://analytics.estv.fr",
+      "checkUrl": "https://analytics.estv.fr",
+      "category": "core"
+    },
+    {
       "id": "materials-simulator",
       "name": "Materials Simulator",
-      "description": "A simulator of materials",
+      "description": "Interactive materials science simulation",
       "url": "https://materials-simulator.estv.fr",
       "checkUrl": "https://materials-simulator.estv.fr",
       "category": "projects"
@@ -69,7 +69,7 @@
     {
       "id": "shareo",
       "name": "Shareo",
-      "description": "A simple and minimalist link sharing platform",
+      "description": "Client portal link sharing platform for B2B collaborative content delivery",
       "url": "https://shareo.fr",
       "checkUrl": "https://shareo.fr",
       "category": "projects"
@@ -77,7 +77,7 @@
     {
       "id": "openwebui",
       "name": "Open WebUI",
-      "description": "Openwebui service self-hosted. With my prompts and my skills homemades",
+      "description": "Self-hosted Openwebui (LLM interface) with custom prompts and homemade AI assistant skill",
       "url": "https://openwebui.estv.fr",
       "checkUrl": "https://openwebui.estv.fr/health",
       "category": "tools"
@@ -85,7 +85,7 @@
     {
       "id": "todo",
       "name": "Todo",
-      "description": "A simple todo application",
+      "description": "Full-featured task manager with projects, tags, Kanban board, and calendar views",
       "url": "https://todo.estv.fr",
       "checkUrl": "https://todo.estv.fr/health",
       "category": "tools"
@@ -93,7 +93,7 @@
     {
       "id": "notes",
       "name": "Notes",
-      "description": "A simple note-taking application",
+      "description": "Minimalist note-taking application with folder organization and auto-save functionality",
       "url": "https://notes.estv.fr",
       "checkUrl": "https://notes.estv.fr/health",
       "category": "tools"
@@ -101,7 +101,7 @@
     {
       "id": "news",
       "name": "News",
-      "description": "A simple application that list papers from arxiv.org.",
+      "description": "ML research aggregator fetching arXiv papers with summaries",
       "url": "https://news.estv.fr",
       "checkUrl": "https://news.estv.fr/health",
       "category": "tools"
@@ -109,7 +109,7 @@
     {
       "id": "file",
       "name": "File",
-      "description": "A self-hosted file sharing platform",
+      "description": "Temporary file sharing platform with automatic 2-hour deletion and 50MB limit",
       "url": "https://file.estv.fr",
       "checkUrl": "https://file.estv.fr/health",
       "category": "tools"
@@ -117,7 +117,7 @@
     {
       "id": "hook",
       "name": "Hook",
-      "description": "A lightweight self-hosted HTTP request catcher and webhook interceptor to inspect and debug live API payloads in real-time",
+      "description": "Webhook catcher for debugging and inspecting HTTP requests in real-time",
       "url": "https://hook.estv.fr",
       "checkUrl": "https://hook.estv.fr/health",
       "category": "tools"
