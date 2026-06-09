@@ -51,11 +51,11 @@
       "category": "core"
     },
     {
-      "id": "dashboard",
-      "name": "Dashboard",
-      "description": "",
-      "url": "https://dashboard.estv.fr",
-      "checkUrl": "https://dashboard.estv.fr",
+      "id": "status",
+      "name": "Status",
+      "description": "Real-time Docker container monitor and service manager",
+      "url": "https://status.estv.fr",
+      "checkUrl": "https://status.estv.fr/health",
       "category": "core"
     },
     {
@@ -104,6 +104,22 @@
       "description": "A simple application that list papers from arxiv.org.",
       "url": "https://news.estv.fr",
       "checkUrl": "https://news.estv.fr/health",
+      "category": "tools"
+    },
+    {
+      "id": "file",
+      "name": "File",
+      "description": "A self-hosted file sharing platform",
+      "url": "https://file.estv.fr",
+      "checkUrl": "https://file.estv.fr/health",
+      "category": "tools"
+    },
+    {
+      "id": "hook",
+      "name": "Hook",
+      "description": "A lightweight self-hosted HTTP request catcher and webhook interceptor to inspect and debug live API payloads in real-time",
+      "url": "https://hook.estv.fr",
+      "checkUrl": "https://hook.estv.fr/health",
       "category": "tools"
     }
   ]
