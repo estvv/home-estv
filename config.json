@@ -121,6 +121,14 @@
       "url": "https://hook.estv.fr",
       "checkUrl": "https://hook.estv.fr/health",
       "category": "tools"
+    },
+    {
+      "id": "bookmarks",
+      "name": "Bookmarks",
+      "description": "Self-hosted bookmark manager with folder organization and search functionality",
+      "url": "https://bookmarks.estv.fr",
+      "checkUrl": "https://bookmarks.estv.fr/health",
+      "category": "tools"
     }
   ]
 }
