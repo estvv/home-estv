@@ -129,6 +129,14 @@
       "url": "https://bookmarks.estv.fr",
       "checkUrl": "https://bookmarks.estv.fr/health",
       "category": "tools"
+    },
+    {
+      "id": "quizz",
+      "name": "Quizz",
+      "description": "Self-hosted quiz platform",
+      "url": "https://quizz.estv.fr",
+      "checkUrl": "https://quizz.estv.fr/health",
+      "category": "tools"
     }
   ]
 }
