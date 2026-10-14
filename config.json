@@ -7,7 +7,8 @@
     { "id": "me", "name": "Me" },
     { "id": "core", "name": "Core" },
     { "id": "projects", "name": "Projects" },
-    { "id": "tools", "name": "Tools" }
+    { "id": "tools", "name": "Tools" },
+    { "id": "game", "name": "Game" }
   ],
   "services": [
     {
@@ -137,6 +138,14 @@
       "url": "https://quizz.estv.fr",
       "checkUrl": "https://quizz.estv.fr/health",
       "category": "tools"
+    },
+    {
+      "id": "music",
+      "name": "Music",
+      "description": "Self-hosted music games platform",
+      "url": "https://music.estv.fr",
+      "checkUrl": "https://music.estv.fr/health",
+      "category": "game"
     }
   ]
 }
